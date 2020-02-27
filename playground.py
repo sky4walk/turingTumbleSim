@@ -288,6 +288,9 @@ def getConnectedGears(playliste,actBallPos,connectedList) :
   actConnection = []
   actSign = getSign(playliste,actBallPos)
 
+  if False == isBallInTheList(connectedList,actBallPos) :
+    actConnection.append(actBallPos)
+
   if sign_gearBitL == actSign or \
      sign_gearBitR == actSign or \
      sign_gear == actSign :
@@ -379,7 +382,7 @@ def getLeftBlueBall() :
   return Ball(3,0,'l','b')
 #------------------------------------------------------------------------------
 def getRightRedBall() :
-  return Ball(6,0,'r','r')
+  return Ball(7,0,'r','r')
 #------------------------------------------------------------------------------
 def printBallResultList(playBallResults) :
   for playBall in playBallResults :

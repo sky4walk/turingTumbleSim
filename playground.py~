@@ -379,7 +379,7 @@ def getLeftBlueBall() :
   return Ball(3,0,'l','b')
 #------------------------------------------------------------------------------
 def getRightRedBall() :
-  return Ball(6,0,'r','r')
+  return Ball(7,0,'r','r')
 #------------------------------------------------------------------------------
 def printBallResultList(playBallResults) :
   for playBall in playBallResults :
@@ -410,12 +410,9 @@ def main() :
     if storeBall :
       playBallResults.append(playBall)
       if playBall.getX() < lineLength/2 :
-        print("left")
         playBall = getLeftBlueBall()
       else :
-        print("right")
         playBall = getRightRedBall()
-      playBall.printItAll()
       printBallResultList(playBallResults)
       print()
 #------------------------------------------------------------------------------
