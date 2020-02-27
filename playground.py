@@ -406,7 +406,8 @@ def main() :
     while playBall.getY() < lineCnt :
       printPlayGroundWithBallInside(playliste,playBall)
       if False == singleStep(playliste,playBall,ConnectedGearsList) :
-        break
+        print("Stopp",playBall.getColor())
+        exit() 
       else :
         storeBall = True
       print()

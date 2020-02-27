@@ -288,6 +288,9 @@ def getConnectedGears(playliste,actBallPos,connectedList) :
   actConnection = []
   actSign = getSign(playliste,actBallPos)
 
+  if False == isBallInTheList(connectedList,actBallPos) :
+    actConnection.append(actBallPos)
+
   if sign_gearBitL == actSign or \
      sign_gearBitR == actSign or \
      sign_gear == actSign :
@@ -403,6 +406,8 @@ def main() :
     while playBall.getY() < lineCnt :
       printPlayGroundWithBallInside(playliste,playBall)
       if False == singleStep(playliste,playBall,ConnectedGearsList) :
+        print("Stopp",playBall.getColor())
+        exit() 
         break
       else :
         storeBall = True
