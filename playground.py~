@@ -396,7 +396,8 @@ def main() :
   playBall = getLeftBlueBall()
   playBallResults = []
 
-  for i in range(numBalls) :
+  ballCnt = int(numBalls)
+  for i in range(ballCnt) :
     storeBall = False
     while playBall.getY() < lineCnt :
       printPlayGroundWithBallInside(playliste,playBall)
