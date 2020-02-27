@@ -34,6 +34,7 @@ class Ball :
   ballColor = 'b'
   def __init__(self,x,y,comesFrom = 'r',ballColor = 'b') :
     self.setNewPos(x,y)
+    self.ballColor = ballColor
     if comesFrom == 'r' :
       self.ballOldPosX = lineLength
   def setNewPos(self,x,y) :
@@ -66,6 +67,7 @@ class Ball :
       print("from left")
     else :
       print("from right")
+    print("color ",self.ballColor)
   def getX(self) :
     return self.ballActPosX
   def getY(self) :
@@ -243,11 +245,11 @@ def singleStep(playliste,playball,ConnectedGearsList) :
     else :
       playball.nextLD()
   elif actSign == sign_bitL :
-    playball.nextRD()
     setSign(playliste,playball,sign_bitR)
+    playball.nextRD()
   elif actSign == sign_bitR :
-    playball.nextLD()
     setSign(playliste,playball,sign_bitL)
+    playball.nextLD()
   elif actSign == sign_interceptor :
     return False
   elif actSign == sign_gear :
