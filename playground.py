@@ -117,7 +117,8 @@ def loadPlayGround(playgroundName) :
   playliste = []
   for line in fnDatei :
     line = line.strip()
-    playliste.append(line)
+    if line[0] != '#' :
+      playliste.append(line)
   fnDatei.close()
   return playliste
 #------------------------------------------------------------------------------
