@@ -1,0 +1,26 @@
+# Usage: C:\Users\andre\develop\turingTumbleSim\playground.py  <PlayGround Filename> [<number Balls>]
+# Ziel drehe die zwei Bits nach rechts
+# Kugeln: blau 2 rot 0 
+.o.R.o.o.o.
+o.o.R.o.o.o
+.o.o.>.o.o.
+o.o.L.R.o.o
+.o.L.o.R.o.
+o.R.o.o.R.o
+.<.<.<.<.<.
+o.o.L.o.o.o
+.o.L.o.o.o.
+o.L.o.o.o.o
+.L.o.o.o.o.
+#
+# Non             .
+# Space           o
+# Ramp Left       L
+# Ramp Right      R
+# Crossover       X
+# Bit Left        <
+# Bit Right       >
+# Interceptor     -
+# Gear            *
+# Gear Bit Left   (
+# Gear Bit Right  )
