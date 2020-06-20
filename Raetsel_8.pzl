@@ -1,15 +1,15 @@
 # Usage: playground.py  <PlayGround Filename> [<number Balls>]
-.o.o.o.o.o.
-o.o.o.o.o.o
-.o.o.o.o.o.
-o.o.o.o.o.o
-.o.o.o.o.o.
-o.o.o.o.o.o
-.o.o.o.o.o.
-o.o.o.o.o.o
-.o.o.o.o.o.
-o.o.o.o.o.o
-.o.o.o.o.o.
+.o.R.o.L.o.
+o.o.R.L.o.o
+.o.o.<.o.o.
+o.o.L.R.o.o
+.o.R.o.L.o.
+o.o.L.R.o.o
+.o.R.o.L.o.
+o.o.L.R.o.o
+.o.R.o.L.o.
+o.o.L.R.o.o
+.o.R.o.L.o.
 #
 # Non             .
 # Space           o

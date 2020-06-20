@@ -92,20 +92,20 @@ def getFilenameParameter() :
   if len(sys.argv) > 2 :
     numBalls = int(sys.argv[2])
   if len(sys.argv) == 1 :
-    print("Usage:", sys.argv[0], " <PlayGround Filename> [<number Balls>]");
+    print("# Usage:", sys.argv[0], " <PlayGround Filename> [<number Balls>]");
     printPlayground()
-    print()
-    print("Non\t\t",sign_non)
-    print("Space\t\t",sign_space)
-    print("Ramp Left\t",sign_rampL)
-    print("Ramp Right\t",sign_rampR)
-    print("Crossover\t",sign_crossover)
-    print("Bit Left\t",sign_bitL)
-    print("Bit Right\t",sign_bitR)
-    print("Interceptor\t",sign_interceptor)
-    print("Gear\t\t",sign_gear)
-    print("Gear Bit Left\t",sign_gearBitL)
-    print("Gear Bit Right\t",sign_gearBitR)
+    print("#")
+    print("# Non            ",sign_non)
+    print("# Space          ",sign_space)
+    print("# Ramp Left      ",sign_rampL)
+    print("# Ramp Right     ",sign_rampR)
+    print("# Crossover      ",sign_crossover)
+    print("# Bit Left       ",sign_bitL)
+    print("# Bit Right      ",sign_bitR)
+    print("# Interceptor    ",sign_interceptor)
+    print("# Gear           ",sign_gear)
+    print("# Gear Bit Left  ",sign_gearBitL)
+    print("# Gear Bit Right ",sign_gearBitR)
     exit()
   return (datName,numBalls)
 #------------------------------------------------------------------------------
@@ -117,8 +117,9 @@ def loadPlayGround(playgroundName) :
   playliste = []
   for line in fnDatei :
     line = line.strip()
-    if line[0] != '#' :
-      playliste.append(line)
+    if 0 < len( line ) :
+      if line[0] != '#' :
+        playliste.append(line)
   fnDatei.close()
   return playliste
 #------------------------------------------------------------------------------
