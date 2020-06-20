@@ -387,7 +387,8 @@ def getRightRedBall() :
   return Ball(7,0,'r','r')
 #------------------------------------------------------------------------------
 def printBallResultList(playBallResults) :
-  for playBall in playBallResults :
+  revList = playBallResults[::-1]
+  for playBall in revList :
     print(playBall.getColor(),end = '')
   print()
 #------------------------------------------------------------------------------

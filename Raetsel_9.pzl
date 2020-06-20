@@ -1,0 +1,24 @@
+# Usage: playground.py  <PlayGround Filename> [<number Balls>]
+.o.>.o.L.o.
+o.R.R.L.o.o
+.o.R.X.o.o.
+o.o.L.R.o.o
+.o.R.o.L.o.
+o.o.L.R.o.o
+.o.R.o.L.o.
+o.o.L.R.o.o
+.o.R.o.L.o.
+o.o.L.R.o.o
+.o.R.o.L.o.
+#
+# Non             .
+# Space           o
+# Ramp Left       L
+# Ramp Right      R
+# Crossover       X
+# Bit Left        <
+# Bit Right       >
+# Interceptor     -
+# Gear            *
+# Gear Bit Left   (
+# Gear Bit Right  )
