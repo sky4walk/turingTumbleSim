@@ -1,0 +1,25 @@
+# Usage: C:\Users\andre\develop\turingTumbleSim\playground.py  <PlayGround Filename> [<number Balls>]
+# fange eine rote kugel
+.o.R.o.L.o.
+o.o.R.L.o.o
+.o.o.>.o.o.
+o.o.L.o.R.o
+.o.L.o.o.L.
+o.L.o.o.L.o
+.R.o.o.L.o.
+o.R.o.L.o.o
+.o.R.-.o.o.
+o.o.R.o.o.o
+.o.o.R.o.o.
+#
+# Non             .
+# Space           o
+# Ramp Left       L
+# Ramp Right      R
+# Crossover       X
+# Bit Left        <
+# Bit Right       >
+# Interceptor     -
+# Gear            *
+# Gear Bit Left   (
+# Gear Bit Right  )
