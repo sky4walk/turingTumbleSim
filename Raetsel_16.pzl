@@ -1,4 +1,5 @@
 # Usage: C:\Users\andre\develop\turingTumbleSim\playground.py  <PlayGround Filename> [<number Balls>]
+# erstelle muster drei blaue kugeln
 .o.<.o.o.o.
 o.R.R.o.o.o
 .o.<.L.o.o.
