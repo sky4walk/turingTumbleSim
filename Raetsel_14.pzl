@@ -1,8 +1,9 @@
 # Usage: C:\Users\andre\develop\turingTumbleSim\playground.py  <PlayGround Filename> [<number Balls>]
-# wenn Bit (6,3) am Anfang nach links zeigt fange eine blaue Kugel
+# wenn Bit A (6,3) am Anfang nach links zeigt fange eine blaue Kugel
 # wenn nicht, dann eine rote
 .o.R.o.R.o.
 o.o.R.o.L.o
+#    A
 .o.o.<.L.o.
 o.o.L.R.o.o
 .o.L.o.R.o.
