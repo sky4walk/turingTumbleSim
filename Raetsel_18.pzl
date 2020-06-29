@@ -1,0 +1,29 @@
+# Usage: C:\Users\andre\develop\turingTumbleSim\playground.py  <PlayGround Filename> [<number Balls>]
+# Wenn Bit A UND Bit B am Anfang nach rechts zeigen, dann fange ein Kugel 
+# in Faenger W ab, ansonsten in Faenger F
+.o.R.o.o.o.
+o.o.R.o.o.o
+#Bit A
+.o.o.>.o.o.
+o.o.R.R.o.o
+#Bit B
+.o.o.>.o.o.
+o.o.L.R.o.o
+#  W   F
+.o.-.o.-.o.
+o.o.o.o.o.o
+.o.o.o.o.o.
+o.o.o.o.o.o
+.o.o.o.o.o.
+#
+# Non             .
+# Space           o
+# Ramp Left       L
+# Ramp Right      R
+# Crossover       X
+# Bit Left        <
+# Bit Right       >
+# Interceptor     -
+# Gear            *
+# Gear Bit Left   (
+# Gear Bit Right  )

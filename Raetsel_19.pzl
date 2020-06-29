@@ -1,0 +1,28 @@
+# Usage: C:\Users\andre\develop\turingTumbleSim\playground.py  <PlayGround Filename> [<number Balls>]
+# Wenn Bit A und Bit B am Anfang nach rechts zeigen
+# fange eine blaue Kugel ab, wenn nicht eine rote
+.o.R.o.R.o.
+o.o.R.o.R.o
+#Bit A
+.o.o.>.o.R.
+o.o.R.R.o.L
+#Bit B
+.o.o.>.o.R.
+o.o.L.R.o.L
+.o.R.o.R.L.
+o.o.L.o.X.o
+.o.R.o.L.R.
+o.o.R.L.o.L
+.o.o.-.o.R.
+#
+# Non             .
+# Space           o
+# Ramp Left       L
+# Ramp Right      R
+# Crossover       X
+# Bit Left        <
+# Bit Right       >
+# Interceptor     -
+# Gear            *
+# Gear Bit Left   (
+# Gear Bit Right  )
