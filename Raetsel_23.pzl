@@ -1,0 +1,25 @@
+# Usage: C:\Users\andre\develop\turingTumbleSim\playground.py  <PlayGround Filename> [<number Balls>]
+# vier blaue kugeln durchlassen und 5. abfangen
+.o.<.o.o.o.
+o.L.L.o.o.o
+.R.<.o.o.o.
+o.L.L.o.o.o
+.R.>.o.o.o.
+o.L.-.o.o.o
+.R.o.o.o.o.
+o.L.o.o.o.o
+.R.o.o.o.o.
+o.L.o.o.o.o
+.R.o.o.o.o.
+#
+# Non             .
+# Space           o
+# Ramp Left       L
+# Ramp Right      R
+# Crossover       X
+# Bit Left        <
+# Bit Right       >
+# Interceptor     -
+# Gear            *
+# Gear Bit Left   (
+# Gear Bit Right  )

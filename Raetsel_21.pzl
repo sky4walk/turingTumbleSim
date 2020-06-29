@@ -1,0 +1,31 @@
+# Usage: C:\Users\andre\develop\turingTumbleSim\playground.py  <PlayGround Filename> [<number Balls>]
+# zaehle die anzahl der blauen kugeln
+# Bit X nach links ist 0, nach rechts 1
+# Anzahl = Bit 1 * 1 + Bit 2 * 2 + Bit 3 * 4 + Bit 4 * 8
+#  1 Bit 
+.o.<.o.o.o.
+o.R.R.o.o.o
+#  2 Bit
+.o.<.L.o.o.
+o.R.R.o.o.o
+#  3 Bit
+.o.<.L.o.o.
+o.R.R.o.o.o
+# 4 Bit
+.o.<.L.o.o.
+o.R.R.o.o.o
+.o.R.L.o.o.
+o.o.L.o.o.o
+.o.R.o.o.o.
+#
+# Non             .
+# Space           o
+# Ramp Left       L
+# Ramp Right      R
+# Crossover       X
+# Bit Left        <
+# Bit Right       >
+# Interceptor     -
+# Gear            *
+# Gear Bit Left   (
+# Gear Bit Right  )
