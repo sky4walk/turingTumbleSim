@@ -1,0 +1,26 @@
+# Usage: C:\Users\andre\develop\turingTumbleSim\playground.py  <PlayGround Filename> [<number Balls>]
+#Umkehrung aller 9 bits unabhaengig der aktuellen stellung
+.o.>.o.R.o.
+# alle bits ab hier
+o.>.R.o.>.o
+.R.L.>.R.L.
+o.>.R.L.-.o
+.R.L.>.o.o.
+o.>.R.L.o.o
+.R.L.>.o.o.
+o.>.R.L.o.o
+.R.L.>.o.o.
+o.L.R.L.o.o
+.R.o.R.o.o.
+#
+# Non             .
+# Space           o
+# Ramp Left       L
+# Ramp Right      R
+# Crossover       X
+# Bit Left        <
+# Bit Right       >
+# Interceptor     -
+# Gear            *
+# Gear Bit Left   (
+# Gear Bit Right  )
