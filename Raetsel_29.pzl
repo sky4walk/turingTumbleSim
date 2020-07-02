@@ -1,0 +1,25 @@
+# Usage: C:\Users\andre\develop\turingTumbleSim\playground.py  <PlayGround Filename> [<number Balls>]
+# muster bbbbbbbrb
+.o.(.o.L.o.
+o.(*R.L.o.o
+.o.o.X.o.o.
+o.o.L.R.o.o
+.o.R.o.L.o.
+o.o.L.R.o.o
+.o.R.o.L.o.
+o.o.L.R.o.o
+.o.R.o.L.o.
+o.o.L.R.o.o
+.o.R.o.L.o.
+#
+# Non             .
+# Space           o
+# Ramp Left       L
+# Ramp Right      R
+# Crossover       X
+# Bit Left        <
+# Bit Right       >
+# Interceptor     -
+# Gear            *
+# Gear Bit Left   (
+# Gear Bit Right  )

@@ -1,0 +1,27 @@
+# Usage: C:\Users\andre\develop\turingTumbleSim\playground.py  <PlayGround Filename> [<number Balls>]
+# zaehle blaue kugeln, wenn mehr als 7 durch sind, muss
+# OV nach rechts kippen und bleiben
+.o.<.o.o.o.
+o.R.R.o.o.o
+.o.<.L.o.o.
+o.R.R.o.o.o
+.o.<.L.o.o.
+# OV
+o*(.L.o.o.o
+.(.L.o.o.o.
+R.L.o.o.o.o
+.L.o.o.o.o.
+R.o.o.o.o.o
+.R.o.o.o.o.
+#
+# Non             .
+# Space           o
+# Ramp Left       L
+# Ramp Right      R
+# Crossover       X
+# Bit Left        <
+# Bit Right       >
+# Interceptor     -
+# Gear            *
+# Gear Bit Left   (
+# Gear Bit Right  )
