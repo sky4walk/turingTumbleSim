@@ -86,13 +86,16 @@ class ConnectedGears :
 #------------------------------------------------------------------------------
 def getFilenameParameter() :
   datName = ""
+  site = True
   numBalls = 1
   if len(sys.argv) > 1 :
     datName = sys.argv[1]
   if len(sys.argv) > 2 :
     numBalls = int(sys.argv[2])
+  if len(sys.argv) > 3 :
+    site = False
   if len(sys.argv) == 1 :
-    print("# Usage:", sys.argv[0], " <PlayGround Filename> [<number Balls>]");
+    print("# Usage:", sys.argv[0], " <PlayGround Filename> [<number Balls>] [Right]");
     printPlayground()
     print("#")
     print("# Non            ",sign_non)
@@ -107,7 +110,7 @@ def getFilenameParameter() :
     print("# Gear Bit Left  ",sign_gearBitL)
     print("# Gear Bit Right ",sign_gearBitR)
     exit()
-  return (datName,numBalls)
+  return (datName,numBalls,site)
 #------------------------------------------------------------------------------
 def loadPlayGround(playgroundName) :
   if os.path.isfile(playgroundName) == False :
@@ -395,13 +398,17 @@ def printBallResultList(playBallResults) :
 # main
 #------------------------------------------------------------------------------
 def main() :
-  (datName,numBalls) = getFilenameParameter()
+  (datName,numBalls,site) = getFilenameParameter()
   playliste = loadPlayGround(datName)
   checkPlayGround(playliste)
 
   ConnectedGearsList = getConnectedGearsList(playliste)
 
-  playBall = getLeftBlueBall()
+  if True == site :
+    playBall = getLeftBlueBall()
+  else :
+    playBall = getRightRedBall()
+  
   playBallResults = []
 
   for i in range(numBalls) :
