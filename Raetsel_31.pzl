@@ -1,0 +1,31 @@
+# Usage: C:\Users\andre\develop\turingTumbleSim\playground.py  Raetsel_13.pzl 6
+# zaehle blaue kugeln links, wenn Bit A nach links zeigt 
+# ansonsten rechts
+#  Bit A
+.o.).o.o.o.
+o.)*).o.o.o
+.o.X.o.o.o.
+o.L.R.o.o.o
+#A   B
+#1   1
+.<.o.<.o.o.
+R.R.R.R.o.o
+#2   2
+.<.L.<.L.o.
+R.R.R.R.o.o
+#3   3
+.<.L.<.L.o.
+R.L.R.L.o.o
+.R.o.L.o.o.
+#
+# Non             .
+# Space           o
+# Ramp Left       L
+# Ramp Right      R
+# Crossover       X
+# Bit Left        <
+# Bit Right       >
+# Interceptor     -
+# Gear            *
+# Gear Bit Left   (
+# Gear Bit Right  )

@@ -1,1 +1,2 @@
+python playground.py
 cmd .

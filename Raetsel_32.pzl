@@ -1,0 +1,29 @@
+# Usage: C:\Users\andre\develop\turingTumbleSim\playground.py  Raetsel_32.pzl 1 [r]
+# Bit A soll unabhaengig der Ausgangsrichtung nach rechts zeigen, 
+# wenn rechte kugeln oder nach links, wenn linke kugel abgeschossen wurde
+.o.R.o.L.o.
+o.o.L.R.o.o
+.o.R.o.L.o.
+#o.o.(*(.o.o
+o.o.)*).o.o
+#Bit A
+#.o.R.(.L.o.
+.o.R.).L.o.
+o.o.L.R.o.o
+.o.L.o.R.o.
+o.L.o.o.R.o
+.L.o.o.o.R.
+R.o.o.o.o.L
+.R.o.o.o.L.
+#
+# Non             .
+# Space           o
+# Ramp Left       L
+# Ramp Right      R
+# Crossover       X
+# Bit Left        <
+# Bit Right       >
+# Interceptor     -
+# Gear            *
+# Gear Bit Left   (
+# Gear Bit Right  )
