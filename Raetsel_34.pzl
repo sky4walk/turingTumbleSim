@@ -1,0 +1,28 @@
+# Usage: C:\Users\andre\develop\turingTumbleSim\playground.py   Raetsel_34.pzl 16
+# Wenn Bit A und Bit B entgegengesetzt zeigen, dann fange blaue Kugel ab
+# sonst eine rote
+.o.R.o.R.o.
+o.o.R.o.R.o
+#    A
+.o.o.<.o.L.
+#   B
+o.o.).L.L.o
+.o.L*).L.o.
+o.L.R.X.o.o
+.R.o.-.R.o.
+o.L.o.o.R.o
+.o.L.o.o.R.
+o.o.L.o.o.L
+.o.o.L.o.L.
+#
+# Non             .
+# Space           o
+# Ramp Left       L
+# Ramp Right      R
+# Crossover       X
+# Bit Left        <
+# Bit Right       >
+# Interceptor     -
+# Gear            *
+# Gear Bit Left   (
+# Gear Bit Right  )

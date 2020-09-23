@@ -1,0 +1,29 @@
+# Usage: C:\Users\andre\develop\turingTumbleSim\playground.py  <PlayGround Filename> [<number Balls>] [Right]
+# Register A gerade, dann fange blaue Kugel, sonst rote
+#0: < 1: > 2: < 3: > 4: < 5: > 6: < 7: >
+#   <    <    >    >    <    <    >    >
+#   <    <    <    <    >    >    >    >
+.o.R.o.L.o.
+o.o.R.R.o.o
+#    A
+.o.o.>.L.o.
+o.o.L.R.o.o
+.o.R.>.L.o.
+o.o.L.R.o.o
+.o.R.>.L.o.
+o.o.L.L.o.o
+.o.R.-.o.o.
+o.o.R.o.o.o
+.o.o.R.o.o.
+#
+# Non             .
+# Space           o
+# Ramp Left       L
+# Ramp Right      R
+# Crossover       X
+# Bit Left        <
+# Bit Right       >
+# Interceptor     -
+# Gear            *
+# Gear Bit Left   (
+# Gear Bit Right  )

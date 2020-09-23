@@ -1,0 +1,27 @@
+# Usage: C:\Users\andre\develop\turingTumbleSim\playground.py  Raetsel_33.pzl 16
+# Zahnrad B in gleiche Richtung zeigen,wie A ohne, dass A die Richtung aendert
+.o.>.o.R.o.
+o.L.R.o.R.o
+.R.o.R.o.R.
+o.L.o.R.o.L
+#       B
+.R.o.o.(*(.
+# A
+o.).o.R.(.L
+.)*).o.R.L.
+o.X.o.o.-.o
+.R.R.o.o.o.
+o.L.R.o.o.o
+.L.o.R.o.o.
+#
+# Non             .
+# Space           o
+# Ramp Left       L
+# Ramp Right      R
+# Crossover       X
+# Bit Left        <
+# Bit Right       >
+# Interceptor     -
+# Gear            *
+# Gear Bit Left   (
+# Gear Bit Right  )
