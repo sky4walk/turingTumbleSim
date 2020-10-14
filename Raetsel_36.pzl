@@ -1,4 +1,4 @@
-# Usage: C:\Users\andre\develop\turingTumbleSim\playground.py  <PlayGround Filename> [<number Balls>] [Right]
+# Usage: C:\Users\andre\develop\turingTumbleSim\playground.py  Raetsel_36.pzl 16
 # Wenn A und B nach rechts zeigen, fange blaue kugel, sonst rote
 # A   B
 # < & < = r  

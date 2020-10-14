@@ -1,0 +1,31 @@
+# Usage: C:\Users\andre\develop\turingTumbleSim\playground.py  Raetsel_37.pzl 32
+# addiert A und B und speichert Ergebnis in B
+# 0: >  1: > 
+#  A   B
+.o.>.o.>.o.
+#  1   1
+o.L.L.R.R.o
+.R.<.o.<.L.
+#  2   2
+o.L.L.R.R.o
+.R.<.o.<.L.
+#  4   4   
+o.L.L.R.R.o
+.R.R.o.<.L.
+#      8
+o.R.R.L.L.o
+.o.R.-.L.o.
+o.o.R.L.o.o
+.o.o.X.o.o.
+#
+# Non             .
+# Space           o
+# Ramp Left       L
+# Ramp Right      R
+# Crossover       X
+# Bit Left        <
+# Bit Right       >
+# Interceptor     -
+# Gear            *
+# Gear Bit Left   (
+# Gear Bit Right  )

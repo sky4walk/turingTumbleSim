@@ -1,0 +1,31 @@
+# Usage: C:\Users\andre\develop\turingTumbleSim\playground.py  Raetsel_38.pzl 16
+# Die Farben der Kugel zeigt den Wert des Registers A an. Erste kugel ignorieren
+# blau : >  rot : <
+# 0 = rrrb 1 = rrbb 2 = rbrb 3 = rbbb 4 = brrb 5 = brbb 6 = bbrb 7 = bbbb
+.o.R.o.L.o.
+o.o.R.L.o.o
+.o.o.<.o.o.
+o.o.<.<.o.o
+.o.L.X.>.o.
+o.L.L.X.-.o
+#    A
+.L.L.>.L.o.
+#    1
+R.R.L.X.o.o
+.R.X.<.L.o.
+#    2
+o.L.X.R.o.o
+.R.o.>.R.o.
+#    4
+#
+# Non             .
+# Space           o
+# Ramp Left       L
+# Ramp Right      R
+# Crossover       X
+# Bit Left        <
+# Bit Right       >
+# Interceptor     -
+# Gear            *
+# Gear Bit Left   (
+# Gear Bit Right  )
