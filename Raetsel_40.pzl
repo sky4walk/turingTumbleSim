@@ -1,0 +1,31 @@
+# Usage: C:\Users\andre\develop\turingTumbleSim\playground.py  <PlayGround Filename> [<number Balls>] [Right]
+# mutipliziere die blauen baelle mit 4 und zeige ergebnis in register A
+# max 7 kugeln
+.o.L.o.o.o.
+# A 1
+o.R.<.o.o.o
+.o.L.o.o.o.
+#   2
+o.R.<.o.o.o
+.o.R.o.o.o.
+#   4
+o.o.<.o.o.o
+.o.R.R.o.o.
+#   8
+o.o.<.L.o.o
+.o.R.R.o.o.
+#   16
+o.o.<.L.o.o
+.o.o.L.o.o.
+#
+# Non             .
+# Space           o
+# Ramp Left       L
+# Ramp Right      R
+# Crossover       X
+# Bit Left        <
+# Bit Right       >
+# Interceptor     -
+# Gear            *
+# Gear Bit Left   (
+# Gear Bit Right  )

@@ -1,0 +1,25 @@
+# Usage: C:\Users\andre\develop\turingTumbleSim\playground.py  <PlayGround Filename> [<number Balls>] [Right]
+# farbcode b,b,b,r,b,b,b,r,...
+.o.R.o.R.o.
+o.o.L.o.L.o
+.o.).o.R.o.
+o.L*>.o.L.o
+.R.).R.R.o.
+o.L.o.L.L.o
+.R.o.R.R.o.
+o.L.o.R.L.o
+.R.o.o.X.o.
+o.L.o.L.L.o
+.R.o.L.R.o.
+#
+# Non             .
+# Space           o
+# Ramp Left       L
+# Ramp Right      R
+# Crossover       X
+# Bit Left        <
+# Bit Right       >
+# Interceptor     -
+# Gear            *
+# Gear Bit Left   (
+# Gear Bit Right  )
