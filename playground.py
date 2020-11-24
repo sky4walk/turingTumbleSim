@@ -84,16 +84,54 @@ class ConnectedGears :
 #------------------------------------------------------------------------------
 # functions
 #------------------------------------------------------------------------------
+def getBallList(text, right) :
+  liste = []
+  siteSign = 'l'
+  if ( True == right ) :
+    siteSign = 'r'  
+  for sign in text :
+    if ( sign == 'b' ) :
+      liste.append( Ball(3,0,siteSign,'b') )
+    else :
+      liste.append( Ball(3,0,siteSign,'r') )    
+  return liste
+#------------------------------------------------------------------------------
+def genBallList(red,right,num) :
+  liste = []
+  ballColor = 'b'
+  if ( True == red ) :
+    ballColor = 'r'  
+  siteSign = 'l'
+  if ( True == right ) :
+    siteSign = 'r'  
+  for x in range(num) :
+    liste.append( Ball(3,0,siteSign,ballColor) )
+  return liste  
+#------------------------------------------------------------------------------
 def getFilenameParameter() :
   datName = ""
   site = True
   numBalls = 1
+  leftBalls = []
+  rightBalls = []
+  lastNr = 3;
   if len(sys.argv) > 1 :
     datName = sys.argv[1]
   if len(sys.argv) > 2 :
-    numBalls = int(sys.argv[2])
-  if len(sys.argv) > 3 :
+    if ( True == sys.argv[2].isnumeric() ) :
+      numBalls = int(sys.argv[2])
+      leftBalls = genBallList(False,False,numBalls)
+      rightBalls = genBallList(True,True,numBalls)
+    else :
+      lastNr = lastNr + 1
+      if len(sys.argv) > 3 :
+        leftBalls  = getBallList(sys.argv[2],False)
+        rightBalls = getBallList(sys.argv[3],True)    
+      else :
+        print ("need left and right definition" )
+  if len(sys.argv) > lastNr :
     site = False
+    print("begin right")
   if len(sys.argv) == 1 :
     print("# Usage:", sys.argv[0], " <PlayGround Filename> [<number Balls>] [Right]");
     printPlayground()
@@ -110,7 +148,7 @@ def getFilenameParameter() :
     print("# Gear Bit Left  ",sign_gearBitL)
     print("# Gear Bit Right ",sign_gearBitR)
     exit()
-  return (datName,numBalls,site)
+  return (datName,leftBalls,rightBalls,site)
 #------------------------------------------------------------------------------
 def loadPlayGround(playgroundName) :
   if os.path.isfile(playgroundName) == False :
@@ -383,12 +421,6 @@ def changePlaylistGears(playliste,gearList) :
     elif actSign == sign_gearBitR :
       setSign(playliste,actBall,sign_gearBitL)
 #------------------------------------------------------------------------------
-def getLeftBlueBall() :
-  return Ball(3,0,'l','b')
-#------------------------------------------------------------------------------
-def getRightRedBall() :
-  return Ball(7,0,'r','r')
-#------------------------------------------------------------------------------
 def printBallResultList(playBallResults) :
   revList = playBallResults[::-1]
   for playBall in revList :
@@ -398,20 +430,19 @@ def printBallResultList(playBallResults) :
 # main
 #------------------------------------------------------------------------------
 def main() :
-  (datName,numBalls,site) = getFilenameParameter()
+  (datName,leftBalls,righBalls,site) = getFilenameParameter()
   playliste = loadPlayGround(datName)
   checkPlayGround(playliste)
 
   ConnectedGearsList = getConnectedGearsList(playliste)
-
-  if True == site :
-    playBall = getLeftBlueBall()
-  else :
-    playBall = getRightRedBall()
-  
   playBallResults = []
 
-  for i in range(numBalls) :
+  if True == site :
+    playBall = leftBalls.pop(0)
+  else :
+    playBall = righBalls.pop(0)
+
+  while playBall != None   :
     storeBall = False
     while playBall.getY() < lineCnt :
       printPlayGroundWithBallInside(playliste,playBall)
@@ -425,9 +456,16 @@ def main() :
     if storeBall :
       playBallResults.append(playBall)
       if playBall.getX() < lineLength/2 :
-        playBall = getLeftBlueBall()
+        playBall = None
+        if 0 < len (leftBalls) :
+          playBall = leftBalls.pop(0)
+        else :
+          playBall = None
       else :
-        playBall = getRightRedBall()
+        if 0 < len (righBalls) :
+          playBall = righBalls.pop(0)
+        else :
+          playBall = None
       printBallResultList(playBallResults)
       print()
 #------------------------------------------------------------------------------

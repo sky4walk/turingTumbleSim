@@ -1,0 +1,26 @@
+# Usage: C:\Users\andre\develop\turingTumbleSim\playground.py  Raetsel_41.pzl 1
+# register A auf null setzen mit nur einer kugel
+.o.R.o.L.o.
+#    A
+o.o.)*o.o.o
+.o.R.).o.o.
+o.o.(.o.o.o
+.o.R*(.o.o.
+o.o.R.o.o.o
+.o.R.)*o.o.
+o.o.o.).o.o
+.o.o.(.o.o.
+o.o.L*(.o.o
+.o.o.L.o.o.
+#
+# Non             .
+# Space           o
+# Ramp Left       L
+# Ramp Right      R
+# Crossover       X
+# Bit Left        <
+# Bit Right       >
+# Interceptor     -
+# Gear            *
+# Gear Bit Left   (
+# Gear Bit Right  )

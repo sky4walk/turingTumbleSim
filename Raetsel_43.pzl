@@ -1,0 +1,28 @@
+# Usage: C:\Users\andre\develop\turingTumbleSim\playground.py  Raetsel_43.pzl 16
+# wenn gear bits A und B entgegengesetzt sind, dann fange blauen ball ab,
+# sonst rot
+.o.R.o.R.o.
+o.o.R.o.L.o
+#    A
+.o.o*).R.o.
+#     B
+o.o.).(.L.o
+.o.o.(*X.o.
+o.o.L.L.L.o
+.o.R.-.L.o.
+o.o.R.L.o.o
+.o.o.R.o.o.
+o.o.o.R.o.o
+.o.o.o.R.o.
+#
+# Non             .
+# Space           o
+# Ramp Left       L
+# Ramp Right      R
+# Crossover       X
+# Bit Left        <
+# Bit Right       >
+# Interceptor     -
+# Gear            *
+# Gear Bit Left   (
+# Gear Bit Right  )

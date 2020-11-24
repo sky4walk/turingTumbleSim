@@ -1,0 +1,27 @@
+# Usage: C:\Users\andre\develop\turingTumbleSim\playground.py  Raetsel_41.pzl 32 1
+# wenn register A groesse als B ist, fange blauen ball
+# sonst rot
+#  A   B
+.o.<.o.>.o.
+o.R.R.R.R.o
+.o.>.L.>.L.
+o.R.R.R.R.o
+.o.>.L.>.L.
+o.R.R.R.R.o
+.o.>.L.>.L.
+o.R.R.o.L.o
+.o.R.X.L.o.
+o.o.-.X.o.o
+.o.o.L.R.o.
+#
+# Non             .
+# Space           o
+# Ramp Left       L
+# Ramp Right      R
+# Crossover       X
+# Bit Left        <
+# Bit Right       >
+# Interceptor     -
+# Gear            *
+# Gear Bit Left   (
+# Gear Bit Right  )

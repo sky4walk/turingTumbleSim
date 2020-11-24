@@ -1,0 +1,27 @@
+# Usage: C:\Users\andre\develop\turingTumbleSim\playground.py  Raetsel_44.pzl 20
+# ziehe register A von B und speichere in Balls
+# A muss kleiner als B sein
+#  A   B
+.o.<.o.>.o.
+o.L.L.L.L.o
+.R.>.R.>.o.
+o.L.L.L.L.o
+.R.>.R.>.o.
+o.L.L.L.L.o
+.R.R.R.>.o.
+o.R.-.L.o.o
+.o.R.L.o.o.
+o.o.X.o.o.o
+.o.L.R.o.o.
+#
+# Non             .
+# Space           o
+# Ramp Left       L
+# Ramp Right      R
+# Crossover       X
+# Bit Left        <
+# Bit Right       >
+# Interceptor     -
+# Gear            *
+# Gear Bit Left   (
+# Gear Bit Right  )
